@@ -1,0 +1,82 @@
+<!doctype html>
+
+<head lang="en">
+
+    <head>
+        <!--This code requests for search engines to avoid indexing the site-->
+        <meta name="robots" content="noindex">
+
+        <script src="js/mouse.js"></script>
+
+        <!--Import Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta charset="UTF-8">
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" media="all" href="header.css" />
+    </head>
+
+<body>
+    <center>
+    <!-- <div class="expandedMenu">
+        <center>
+            <div class="headerContainer">
+                <input type="checkbox" id="menuToggle" class="menuToggle" />
+                <label for="menuToggle" class="menuIcon">
+                    <div class="menuBar"></div>
+                    <div class="menuBar"></div>
+                    <div class="menuBar"></div>
+                </label>
+                <a href="index.html" class="headerImageContainer"><img src="Images/Robohornet.png"
+                        class="headerImage"></a>
+                <div class="menuItemsContainer">
+                    <div class="spacer10"></div>
+                    <a href="index.html" class="menuLink">
+                        <h3>Home</h3>
+                    </a>
+                    <a href="index.html" class="menuLink">
+                        <h3>Robots</h3>
+                    </a>
+                    <a href="index.html" class="menuLink">
+                        <h3>About</h3>
+                    </a>
+                    <a href="index.html" class="menuLink">
+                        <h3>Contact</h3>
+                    </a>
+                </div>
+            </div>
+        </center>
+    </div> -->
+    <div class="hi">
+        <section class="top-nav">
+            <div> <a href="/">
+                    <div class="HStack">
+                        <div class="headerImageContainer"> <img src="Images/Robohornet.png" alt="Robohornet Logo" class="headerImage">
+                        </div>
+                    </div>
+                </a> </div>
+            <input id="menu-toggle" class="menu-toggle-class" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button"></div>
+            </label>
+            <ul class="menu">
+                <li> <a href="/" class="menuText"> Home </a> </li>
+                <li> <a href="news" class="menuText"> News </a> </li>
+                <li> <a href="outreach" class="menuText"> Outreach </a> </li>
+                <li> <a href="sponsors" class="menuText"> Sponsors </a> </li>
+                <li> <a href="about" class="menuText"> About </a> </li>
+                <li> <a href="contact" class="menuText"> Contact </a> </li>
+            </ul>
+        </section>
+        <script>
+
+            $(document).on('click', 'a.external', function (event) {
+                event.preventDefault();
+
+                window.open($(this).attr('href'));
+            });
+        </script>
+    </div>
+</center>
+</body>
+
+</html>
